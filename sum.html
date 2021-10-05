@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <title>Edit-item</title>
+  </head>
+  <body>
+  <div class="contact-details-main">
+    <div class="container-fluid">
+      <div class="logo-top">
+          <div class="logo-left">
+            <a href="#"> <img src="images/logo-img.png"></a>
+            <a href="#"><img src="images/logo-name-1.png"></a>
+          </div> 
+          <p>Admin</p> 
+          <div class="admin">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </div>
+            <a href="#">MS</a>
+          </div>
+      </div>
+        <div class="main-body-wrapper">
+          <div class="container-fluid">
+            <div class="contact-details-top">
+              <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Core</a></li>
+                <li class="breadcrumb-item"><a href="#">Brands</a></li>
+                <li class="breadcrumb-item active" aria-current="page">The Dragon Chamber</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="heading">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M15 8H1" stroke="#0F123F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 15L1 8L8 1" stroke="#0F123F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+            <p>Add new item</p>
+          </div>
+          <div class="add-new">
+            <div class="container-fluid">
+              <div class="add-details-heading">
+                <p>ITEM DETAILS</p>
+              </div>
+                 <div class="add-detail-switch">
+                    <div class="switch-2">
+                      Available
+                      <label class="switch-inner1">
+                        <input type="checkbox" id="togBtn22">
+                        <div class="slider round">
+                        </div>
+                      </label>
+                    </div>
+                    <div class="switch-2">
+                      Active
+                      <label class="switch-inner1">
+                      <input type="checkbox" id="togBtn23">
+                      <div class="slider round">
+                      </div>
+                      </label>
+                    </div>
+                </div>
+            </div>
+              <div class="border-bottom">
+              </div>
+              <div class="address-details">
+                <div class="container-fluid">
+                  <div class="form-2">
+                    <div class="form-group">
+                      <label for="formGroupExampleInput9">Item Name<span class="star">*</span></label>
+                      <input type="text" class="form-control" id="formGroupExampleInput9" placeholder="The Dragon Chamber" required>
+                      <small id="emailHelp" class="form-text text-muted">This is the name that your customers will see on Tabletop. Make sure you check your spelling, including capitalisations and spaces.</small>
+                    </div>
+                    <div class="form-group">
+                      <div class="area-drop-1">
+                        <label>Menu Category</label>
+                          <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Mains</button>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <div id="myDropdown" class="dropdown-content">
+                              <input type="text" placeholder="Select Category" id="myInput" onkeyup="filterFunction()">
+                              <a href="#about">Mains</a>
+                              <a href="#base">Appetizers</a>
+                              <a href="#blog">Soups</a>
+                              <a href="#contact">BreadBeverages</a>
+                              <a href="#custom">Dessert</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="add-new-item">
+                         <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal7">
+                            + ADD MENU CATEGORY
+                          </button>
+                        </div>
+                    </div>
+                    <div class="check-limit">
+                      <label class="container">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                        Signature Dish
+                      </label>
+                      <label class="container">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                        Discount
+                      </label>
+                      <label class="container">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                        Promotion 
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput10">Price</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput10" placeholder="$20" required>
+                    </div>
+                    <div class="sales-channels">
+                      <label>Service Type</label>
+                        <div class="sales-channel-inner">
+                          <div class="switch-2">
+                            Dine-in
+                            <label class="switch-inner1">
+                              <input type="checkbox" id="togBtn20">
+                              <div class="slider round">
+                              </div>
+                            </label>
+                          </div>
+                          <div class="switch-2">
+                            Take-Away
+                            <label class="switch-inner1">
+                            <input type="checkbox" id="togBtn21">
+                            <div class="slider round">
+                            </div>
+                            </label>
+                          </div>
+                          <div class="switch-2">
+                            Delivery
+                            <label class="switch-inner1">
+                            <input type="checkbox" id="togBtn22" disabled>
+                            <div class="slider round disabled"> 
+                            </div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-area-bottom">
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Item Description<span class="star">*</span></label>
+                          <textarea maxlength="100" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deep fried diced chicken with chopped dried chillies, cashews, chives and Szechuan peppercorns served with crunchy you tiao fritters baked in maple syrup."></textarea>
+                          <div id="the-count">
+                              <span id="current">35</span>
+                              <span id="maximum">/ 100</span>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-video-main">
+                      <div class="image-video-heading">
+                        <p>Images and Videos</p>
+                      </div>
+                      <div class="image-video-inner">    
+                        <div class="file-upload">  
+                          <div class="image-upload-wrap">
+                             <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                             <div class="drag-text">
+                              <img src="images/vector.png">
+                             </div>
+                          </div>
+                          <div class="file-upload-content">
+                            <img class="file-upload-image" src="#" alt="your image" />
+                            <div class="image-title-wrap">
+                              <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <p> Drag & Drop to upload or 
+                        <span>
+                          <button class="browse-button"> 
+                            <input type="file" id="myfile4" name="myfile" readonly>
+                            Browse
+                         </button>
+                        </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <div class="limit-availability">
+              <div class="container-fluid">
+                  <div class="add-details-heading">
+                    <p>LIMIT AND AVAILABILITY</p>
+                  </div>
+              </div>
+             <div class="border-bottom">
+             </div>
+             <div class="limit-inner">
+               <div class="daily-limit">
+                <div class="container-fluid">
+                  <div class="switch-2">
+                      Daily Limit
+                      <label class="switch-inner1">
+                      <input type="checkbox" id="togBtn23">
+                      <div class="slider round">
+                      </div>
+                      </label>
+                    </div>
+                    <br>
+                     <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput13" placeholder="20" required>
+                        <small id="emailHelp" class="form-text text-muted">The limit of menu item for a day. Please ignore it if is unlimited.</small>
+                      </div>
+                  </div>
+               </div>
+               <div class="stock-limit">
+                 <div class="container-fluid">
+                  <div class="switch-2">
+                      Stock Limit
+                      <label class="switch-inner1">
+                      <input type="checkbox" id="togBtn24">
+                      <div class="slider round">
+                      </div>
+                      </label>
+                    </div>
+                    <br>
+                     <div class="form-group">  
+                          <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="120" required>
+                          <small id="emailHelp" class="form-text text-muted">The available quantity of a menu item. Please ignore it if is unlimited.</small>
+                      </div>
+                  </div>
+               </div>
+              <div class="load time">
+                <div class="stock-limit">
+                   <div class="container-fluid">
+                       <p>Lead time (mins)</p>
+                      <br>
+                       <div class="form-group">   
+                            <input type="text" class="form-control" id="formGroupExampleInput16" placeholder="120" required>
+                            <small id="emailHelp" class="form-text text-muted">The cooking time of a menu item. Please ignore it if it doesn’t take time. </small>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>
+      <div class="limit-buttons">
+        <div class="container-fluid">
+          <button class="button1">CANCEL</button>
+          <button class="button2">SAVE</button>
+          <button type="button" class="btn btn-primary button3" data-toggle="modal" data-target="#exampleModal18">
+              <i class="fa fa-trash" aria-hidden="true"></i> DELETE</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>
+  function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+  } else {
+    removeUpload();
+  }
+}
+function removeUpload() {
+  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+  $('.file-upload-content').hide();
+  $('.image-upload-wrap').show();
+   }
+  $('.image-upload-wrap').bind('dragover', function () {
+      $('.image-upload-wrap').addClass('image-dropping');
+    });
+    $('.image-upload-wrap').bind('dragleave', function () {
+      $('.image-upload-wrap').removeClass('image-dropping');
+  });
+</script>
+<script type="text/javascript">function myFunction() 
+    {
+     document.getElementById("myDropdown").classList.toggle("show");
+    }
+  function filterFunction() 
+  {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title mx-auto" id="exampleModalLabel17">Add New Category</h5>  
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <label>Category Title</label>
+                <input type="text" class="form-control" placeholder="Drinks">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- modal -->
+  <div class="modal fade" id="exampleModal18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title  mx-auto" id="exampleModalLabel18">Delete Item</h5>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete "Double Cheeseburger" from the menu? </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
